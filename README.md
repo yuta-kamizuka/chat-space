@@ -27,7 +27,6 @@ belongs_to :groups
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null :false|
-|user_id|integer|null :false|
 ### Association
 has_many :users_groups
 has_many  :users,  :through:  :users_groups
@@ -36,6 +35,7 @@ has_many :messages
 ## users_groupテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null :false, foreign_kye: true|
 group_id|integer|null: false, foreign_kye: true|
 ### Association
 belongs_to :user
