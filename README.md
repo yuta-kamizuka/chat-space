@@ -10,12 +10,12 @@
 ### Association
 - has_many :message
 - has_many :users_groups
-- has_many  :group,  through:  :users_groups
+- has_many  :groups,  through:  :users_groups
 
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null :false|
+|text|text||
 |image||||
 |user_id|integer|null :false|
 |group_id|integer|null :false|
