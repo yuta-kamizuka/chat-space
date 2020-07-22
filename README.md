@@ -16,12 +16,12 @@
 |Column|Type|Options|
 |------|----|-------|
 |text|text||
-|image||||
+|image|string||
 |user_id|integer|null :false|
 |group_id|integer|null :false|
 ### Association
-belongs_to :users
-belongs_to :groups
+belongs_to :user
+belongs_to :group
 
 ## groupsテーブル
 |Column|Type|Options|
